@@ -1,0 +1,23 @@
+git --version : version btati hai
+pwd : khan pe kam kr rhe hai
+git init : repository bnati hai
+git config --global user.name "folder name" : for naming the repository
+git config user.name : to check the name of folder
+git config --global user.email "enter email" : to add email
+git config user.eamil ; to check email
+mkdir 'name of file': to make new folder
+cd 'name of file' : to enter the named folder
+touch "name of file" : to make a new text or any type of file
+ls : display files in a folder
+vim "name of file" : to enter the file
+hit ESC key then type >    :wq    < to exit the file 
+cat 'name of file' : display the content of file 
+git add 'name of file' : to add a file 
+git commit : pta ni kush hota tha isme
+git commit -m "name of file" :jo changes hmne file me kiye hai vo repository me add ho jae ge
+git log : display the details of the changes made
+git branch :to see the present branches
+git branch 'name of branch' : to create a new branch
+git checkout 'branch name' : to enter a branch
+git branch -d 'branch name' : to dlt a branch
+git merge 'the branch u want to merge in presentworking branch' : to merge2 branches

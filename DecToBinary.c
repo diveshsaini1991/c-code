@@ -1,0 +1,49 @@
+// #include<stdio.h>
+// int DecToBinary(int n){
+//     int r,num=0;
+//     for (int i = 0; n > 0; i++)
+//     {
+//         r=n%2;
+//         printf("%d",r);
+//         n=n/2;
+//     }
+//     return num;
+    
+// }
+// int main(){
+//     int n,num;
+//     printf("Enter no.: ");
+//     scanf("%d",&n);
+//     DecToBinary(n);
+    
+// }
+// convert decimal to binary
+
+#include <stdio.h>
+#include <math.h>
+
+long long convert(int);
+
+int main() {
+  int n;
+  long long bin;
+  printf("Enter a decimal number: ");
+  scanf("%d", &n);
+  bin = convert(n);
+  printf("%d in decimal =  %lld in binary", n, bin);
+  return 0;
+}
+
+long long convert(int n) {
+  long long bin = 0;
+  int rem, i = 1;
+
+  while (n!=0) {
+    rem = n % 2;
+    n /= 2;
+    bin += rem * i;
+    i *= 10;
+  }
+
+  return bin;
+}
